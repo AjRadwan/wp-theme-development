@@ -147,12 +147,4 @@ body {
   align-items: center;
   margin-top: 50px;
 }
-
-/* notice */
-#notice{
-  padding: 30px;
-  text-align: center;
-  margin: 20px;
-  color: white;
-  background-color: tomato;
-}
+ 
