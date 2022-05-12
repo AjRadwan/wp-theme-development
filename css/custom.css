@@ -2,7 +2,8 @@
  Common CSS
 ========================================*/
 body {
-    font-family: "Kaisei Decol", serif;
+  font-family: 'Roboto Serif', serif;
+
   }
   h1,
   h2,
@@ -10,12 +11,28 @@ body {
   h4,
   h5,
   h6 {
-    font-family: "Oswald", sans-serif;
-    line-height: 1.5em;
+    font-family: 'Roboto Serif', serif;
+   line-height: 1.5em;
   }
   img {
     max-width: 100%;
+    margin: 10px;
   }
+
+  .btn-read{
+    background-color: #ea1a70; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.btn-read:hover{
+  color: black;
+  background-color: rgba(216, 18, 18, 0.2);
+}
   
   /*=======================================
    Header Area Style
@@ -133,6 +150,48 @@ body {
 }
 
 
+/*=======================================
+ Index Page Style
+========================================*/
+#body_area {
+  padding: 45px 0;
+}
+#body_area .blog_area {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb img {
+  transition: 0.5s;
+  width: 100%;
+  display: block;
+}
+#body_area .post_thumb:hover img {
+  transform: scale(1.1);
+}
+#body_area .post_details {
+  width: 100%;
+}
+#body_area .post_details h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+#body_area .post_details h2 a {
+  color: #262626;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#body_area .post_details h2 a:hover {
+  color: #ea1a70;
+}
+
+
+
 /* footer  */
 #copyright_area {
   background: #666;
@@ -147,4 +206,5 @@ body {
   align-items: center;
   margin-top: 50px;
 }
+
  

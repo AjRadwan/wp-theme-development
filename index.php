@@ -12,11 +12,13 @@ get_header();
    ?>
       <div id="blog_area">
         <div class="post_thumb">
-          <?php echo the_post_thumbnail('post-thumbnails'); ?>
+        <a href="<?php the_permalink();?>"><?php echo the_post_thumbnail('post-thumbnails'); ?></a>
+
         </div>
        <div class="post_details">
-         <h1><a href="<?php the_permalink();?>"><?php  the_title();?></a></h1>
+         <h2><a href="<?php the_permalink();?>"><?php  the_title();?></a></h2>
           <?php the_excerpt(); ?>
+          <a class="btn-read" href="<?php the_permalink(); ?>">Read More</a>
        </div>
 
       </div>
@@ -27,9 +29,7 @@ get_header();
     endif;
    ?>
 
-
-
-        </div>
+     </div>
         <div class="col-md-3">
            <h2>side bar</h2>
         </div>

@@ -22,7 +22,7 @@
  
  // google fonts loading  
  function goolge_fonts(){
-   wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
+   wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap', false);
  }
  
  add_action('wp_register_script', 'google_fonts');
