@@ -129,4 +129,21 @@ body {
 }
 #header_area.center_menu .col-md-9 ul {
   text-align: center;
+  z-index: 9999;
+}
+
+
+/* footer  */
+#copyright_area {
+  background: #666;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+   height: 30vh;
+}
+#copyright_area p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }

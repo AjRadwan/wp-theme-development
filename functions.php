@@ -56,31 +56,26 @@ function ali_customizer_register($wp_customize){
 
 
 
-  // menu position set 
-  $wp_customize->add_section('menu_position', array(
-    'title' =>__('Menu Positon opiton', 'procoder'),
-    'description' => 'update Menu Area from here',
+  // footer  
+  $wp_customize->add_section('footer_area', array(
+    'title' =>__('Footer area', 'procoder'),
+    'description' => 'update Footer Area from here',
   ));
   
-  $wp_customize->add_setting('menu_position', array(
-    'default' => 'right_menu'
+  $wp_customize->add_setting('footer_area', array(
+    'default' => '&copy; Aowar J Radwan | ProCoder'
  ));
 
- $wp_customize-> add_control('menu_position', array(
-      'label' => 'Menu Position',
-       'description' => 'select your menu position',
-      'setting' => 'menu_position',
-      'section' => 'menu_position',
-       'type' => 'radio',
-       'choices' => array(
-         'left_menu' => 'Left Menu',
-         'right_menu' => 'Right Menu',
-         'center_menu' => 'Center Menu',
-       ),
+ $wp_customize-> add_control('footer_area', array(
+      'label' => 'footer Position',
+       'description' => 'select your footer position',
+      'setting' => 'footer_area',
+      'section' => 'footer_area',
  ));
-
-
 }
+
+
+
 add_action('customize_register', 'ali_customizer_register', 'procoder');
 
 
