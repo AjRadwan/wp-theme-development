@@ -29,6 +29,15 @@ get_header();
     endif;
    ?>
 
+       <div id="page_nav">
+         <?php if('pagenav') {pagenav(); } else {?>
+          
+          <?php next_posts_link();?>
+          <?php previous_posts_link();?>
+
+         <?php  }?>
+       </div>
+
      </div>
         <div class="col-md-3">
            <h2>side bar</h2>

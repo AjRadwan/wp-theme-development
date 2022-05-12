@@ -123,6 +123,8 @@ body {
   }
 
 
+
+
   /*===========================================
   Menu Position
 ===========================================*/
@@ -191,6 +193,32 @@ body {
 }
 
 
+/*===========================================
+  Pagenav Area Styling
+===========================================*/
+ 
+#page_nav p.pages {
+  background: #ea1a70;
+  color: #fff;
+  padding: 5px 10px;
+}
+#page_nav p.pages span {
+  display: inline-block;
+  padding: 0 5px;
+}
+#page_nav .page-numbers {
+  background: #ea1a70;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
+  background: #262626;
+}
 
 /* footer  */
 #copyright_area {
