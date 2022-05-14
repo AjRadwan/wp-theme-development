@@ -22,6 +22,7 @@ function custom_service(){
       'hierarchial' => true,
       'show_ui' => true,
       'capability_type' => 'post',
+      'taxonomies' => array('category'),
       'rewrite' => array('slag' => 'service'),
       'supports' => array('title', 'thumbnail', 'editor', 'excerpt'),
       )
