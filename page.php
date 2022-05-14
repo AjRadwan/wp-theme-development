@@ -6,12 +6,10 @@ get_header();
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-     
-        <?php get_template_part('template_part/blog_setup');?>
-
-     </div>
+        <?php get_template_part('template_part/post_setup'); ?>
+        </div>
         <div class="col-md-3">
-           <?php get_sidebar();?>
+        <?php get_sidebar()?>
         </div>
       </div>
     </div>
@@ -25,7 +23,4 @@ get_footer();
 
 
 
-
-<?php wp_footer();?>
-</body>
-</html>
+ 
