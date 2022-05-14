@@ -7,7 +7,7 @@ get_header();
         <div class="col-md-9">
        <div id="search_title">
         <h1 class="title">
-            <?php printf(__("Search Result for : %s", 'procoder'), get_search_query()); ?>
+            <?php printf(__("Search Result for : %s", 'procoder'), get_search_query());?>
         </h1>
        </div>
         <?php get_template_part('template_part/blog_setup');?>
