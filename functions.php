@@ -5,9 +5,12 @@
 include_once('inc/default.php');
 
 
+
 // css theme and jquery file calling register
 include_once('inc/enqueue.php');
 
+// custom post
+include_once('inc/custom_post.php');
 
 // theme register funcion
 include_once('inc/theme_function.php');
