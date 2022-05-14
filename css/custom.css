@@ -411,6 +411,20 @@ input[type="submit"].submit:hover {
 }
 
 /*===========================================
+  service_area
+===========================================*/
+#service_area{
+  padding: 45px 0;
+
+}
+#service_area .child_service{
+background: #ddd;
+box-shadow: 0 0 10px #666;
+padding: 10px;
+border-radius:15px;
+ 
+}
+/*===========================================
   Comment Area Styling
 ===========================================*/
 #comments_area h3 {
