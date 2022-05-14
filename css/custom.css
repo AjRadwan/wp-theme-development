@@ -1,131 +1,143 @@
 /*=======================================
  Common CSS
 ========================================*/
-body {
-  font-family: 'Roboto Serif', serif;
-
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Roboto Serif', serif;
-   line-height: 1.5em;
-  }
-  img {
-    max-width: 100%;
-    margin: 10px;
-  }
-
-  .btn-read{
-    background-color: #ea1a70; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-.btn-read:hover{
-  color: black;
-  background-color: rgba(216, 18, 18, 0.2);
+:root{
+  --pink:#ea1a70;
 }
-  
-  /*=======================================
-   Header Area Style
-  ========================================*/
-  #header_area {
-    padding: 15px 0;
-  }
-  
-  #header_area .col-md-9 ul {
-    font-family: "Oswald", sans-serif;
-    margin: 10px 0 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
-  }
-  #header_area .col-md-9 ul li {
-    display: inline-block;
-    position: relative;
-  }
-  #header_area .col-md-9 ul li a {
-    color: #262626;
-    padding: 20px 10px;
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  #header_area .col-md-9 ul li a:hover {
-    background: #ea1a70;
-    color: #fff;
-  }
-  
-  /*Dropdown Menu*/
-  #header_area .col-md-9 ul li ul {
-    background: #262626 none repeat scroll 0 0;
-    left: -99999px;
-    margin: 0;
-    position: absolute;
-    text-align: left;
-    top: 62px;
-    width: 200px;
-  }
-  #header_area .col-md-9 ul li:hover ul {
-    left: 0px;
-  }
-  #header_area .col-md-9 ul li ul li {
-    display: block;
-  }
-  #header_area .col-md-9 ul li ul li a {
-    color: #fff;
-    padding: 8px 10px;
-  }
-  #header_area .col-md-9 ul li ul li a:hover {
-    background: #ddd;
-    color: #262626;
-  }
-  #header_area .col-md-9 ul li:hover a {
-    background: #ea1a70;
-    color: #fff;
-  }
-  #header_area .col-md-9 ul li:hover ul li a {
-    background: none;
-    color: #fff;
-  }
-  
-  /*Sub Dropdown Menu*/
-  #header_area .col-md-9 ul li ul ul {
-    left: -99999px;
-    top: 0;
-    position: absolute;
-  }
-  #header_area .col-md-9 ul li:hover ul li ul {
-    left: -999999px;
-  }
-  #header_area .col-md-9 ul li ul li:hover ul {
-    left: 200px;
-  }
-  #header_area .col-md-9 ul li ul li:hover a {
-    background: #ea1a70;
-    color: #fff;
-  }
-  #header_area .col-md-9 ul ul li:hover ul li a {
-    background: #262626;
-    color: #fff;
-  }
-  #header_area .col-md-9 ul ul li ul li a:hover {
-    background: #ea1a70;
-    color: #fff;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+}
+img {
+  max-width: 100%;
+}
+a.redmore,
+input[type="submit"].submit {
+  background: var(--pink);
+  border: 0px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  transition: 0.5s;
+}
+a.redmore:hover,
+input[type="submit"].submit:hover {
+  background: #262626;
+}
+/*=======================================
+ Header Area Style
+========================================*/
+#header_area {
+  padding: 15px 0 20px;
+  box-shadow: 0 3px 10px #ddd;
+}
 
+#header_area .col-md-9 ul {
+  font-family: "Oswald", sans-serif;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+#header_area .col-md-9 ul li {
+  display: inline-block;
+  position: relative;
+}
+#header_area .col-md-9 ul li a span {
+  font-family: "Kaisei Decol", serif;
+  display: block;
+  font-size: 13px;
+}
+#header_area .col-md-9 ul li a {
+  color: #262626;
+  padding: 20px 10px;
+  font-size: 16px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#header_area .col-md-9 ul li a:hover {
+  background: var(--pink);
+  color: #fff;
+}
 
+/*Dropdown Menu*/
+#header_area .col-md-9 ul li ul {
+  background: #262626 none repeat scroll 0 0;
+  left: -99999px;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  top: 62px;
+  width: 200px;
+  z-index: 99999;
+}
+#header_area .col-md-9 ul li:hover ul {
+  left: 0px;
+}
+#header_area .col-md-9 ul li ul li {
+  display: block;
+}
+#header_area .col-md-9 ul li ul li a {
+  color: #fff;
+  padding: 8px 10px;
+}
+#header_area .col-md-9 ul li ul li a:hover {
+  background: #ddd;
+  color: #262626;
+}
+#header_area .col-md-9 ul li:hover a {
+  background: var(--pink);
+  color: #fff;
+}
+#header_area .col-md-9 ul li:hover ul li a {
+  background: none;
+  color: #fff;
+}
 
+/*Sub Dropdown Menu*/
+#header_area .col-md-9 ul li ul ul {
+  left: -99999px;
+  top: 0;
+  position: absolute;
+}
+#header_area .col-md-9 ul li:hover ul li ul {
+  left: -999999px;
+}
+#header_area .col-md-9 ul li ul li:hover ul {
+  left: 200px;
+}
+#header_area .col-md-9 ul li ul li:hover a {
+  background: var(--pink);
+  color: #fff;
+}
+#header_area .col-md-9 ul ul li:hover ul li a {
+  background: #262626;
+  color: #fff;
+}
+#header_area .col-md-9 ul ul li ul li a:hover {
+  background: var(--pink);
+  color: #fff;
+}
 
-  /*===========================================
+/*===========================================
   Menu Position
 ===========================================*/
 #header_area.left_menu .col-md-3 {
@@ -148,9 +160,10 @@ body {
 }
 #header_area.center_menu .col-md-9 ul {
   text-align: center;
-  z-index: 9999;
 }
-
+#header_area.center_menu .col-md-9 ul ul {
+  text-align: left;
+}
 
 /*=======================================
  Index Page Style
@@ -160,7 +173,14 @@ body {
 }
 #body_area .blog_area {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #ddd;
+}
+#body_area .post_page .blog_area {
+  box-shadow: none;
+  padding-top: 0;
 }
 #body_area .post_thumb {
   overflow: hidden;
@@ -178,6 +198,9 @@ body {
 #body_area .post_details {
   width: 100%;
 }
+#body_area .post_details div {
+  width: 100% !important;
+}
 #body_area .post_details h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -189,11 +212,77 @@ body {
   transition: 0.5s;
 }
 #body_area .post_details h2 a:hover {
-  color: #ea1a70;
+  color: var(--pink);
 }
 
-
-
+/*===========================================
+  Archive Styling
+===========================================*/
+#archive_title,
+#search_title {
+  background: var(--pink);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#archive_title h1,
+#search_title h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+/*===========================================
+  404 Area Styling
+===========================================*/
+.error_page {
+  padding: 50px 0;
+  text-align: center;
+}
+.error_page h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.error_page p {
+  color: var(--pink);
+  margin-bottom: 0;
+}
+.error_page a.homepage {
+  background: var(--pink);
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.error_page a.homepage:hover {
+  background: #262626;
+}
+.error_search {
+  margin-bottom: 15px;
+}
+.error_search input[type="text"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.error_search input[type="submit"] {
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+.error_search input[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
+}
 /*===========================================
   Sibebar Area Styling
 ===========================================*/
@@ -206,7 +295,7 @@ body {
   font-size: 30px;
   margin-bottom: 0;
   line-height: 1em;
-  border-left: 5px solid #ea1a70;
+  border-left: 5px solid var(--pink);
   padding-left: 10px;
 }
 .child_sidebar input[type="search"] {
@@ -215,8 +304,8 @@ body {
   padding: 10px;
 }
 .child_sidebar button[type="submit"] {
-  background: #ea1a70;
-  border: 1px solid #ea1a70;
+  background: var(--pink);
+  border: 1px solid var(--pink);
   padding: 10px;
   margin: 0;
   color: #fff;
@@ -245,7 +334,7 @@ body {
   text-decoration: none;
 }
 .child_sidebar ul li a:hover {
-  color: #ea1a70;
+  color: var(--pink);
 }
 .child_sidebar a.tag-cloud-link {
   color: #fff;
@@ -257,16 +346,16 @@ body {
   margin-bottom: 5px;
 }
 .child_sidebar a.tag-cloud-link:hover {
-  background: #ea1a70;
+  background: var(--pink);
 }
-
 
 /*===========================================
   Pagenav Area Styling
 ===========================================*/
- 
+#page_nav {
+}
 #page_nav p.pages {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
   padding: 5px 10px;
 }
@@ -275,7 +364,7 @@ body {
   padding: 0 5px;
 }
 #page_nav .page-numbers {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -288,19 +377,184 @@ body {
   background: #262626;
 }
 
-/* footer  */
+/*===========================================
+  Footer Area Styling
+===========================================*/
+#footer {
+  background: #292929;
+  padding: 40px 0 20px;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#footer .child_sidebar ul li a {
+  color: #fff;
+}
+/*===========================================
+  Copyright Area Styling
+===========================================*/
 #copyright_area {
-  background: #666;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-   height: 30vh;
+  background: #292929;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
 }
 #copyright_area p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+}
+#copyright_area p a {
+  color: var(--pink);
+}
+#copyright_area p a:hover {
+  text-decoration: underline;
 }
 
- 
+/*===========================================
+  Comment Area Styling
+===========================================*/
+#comments_area h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#comments_area label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+#comments_area input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+#comments_area textarea,
+#comments_area input {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 15px;
+}
+#comments_area textarea {
+  min-height: 150px;
+}
+/* ==========================================================================
+   Comments Area
+========================================================================== */
+.comments-area {
+  background: #fff none repeat scroll 0 0;
+  clear: both;
+  margin: 20px auto 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+.comments-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.comment-list,
+.comment-list .children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comment-list li:before {
+  display: none;
+}
+.comment-body {
+  margin-bottom: 20px;
+  margin-left: 65px;
+}
+.comment-author {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+.comment-author a {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+.comment-author .avatar {
+  height: 50px;
+  left: -65px;
+  position: absolute;
+  width: 50px;
+}
+.comment-author .says {
+  display: none;
+}
+.comment-meta {
+  color: #c4c4c4;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.comment-metadata {
+  color: #767676;
+  font-size: 10px;
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+  text-transform: uppercase;
+}
+.comment-metadata a {
+  color: #767676;
+}
+.comment-metadata a.comment-edit-link {
+  color: #222;
+  margin-left: 1em;
+}
+.comment-body {
+  color: #333;
+  font-size: 14px;
+}
+.comment-reply-link {
+  font-weight: 800;
+  position: relative;
+}
+.comment-reply-link .icon {
+  color: #222;
+  left: -2em;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  width: 1em;
+}
+.children .comment-author .avatar {
+  height: 30px;
+  left: -45px;
+  width: 30px;
+}
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid #333;
+  padding: 2px;
+}
+.no-comments,
+.comment-awaiting-moderation {
+  color: #767676;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.comments-pagination {
+  margin: 2em 0 3em;
+}
+.form-submit {
+  text-align: left;
+}
+.form-submit #submit {
+  width: auto;
+}
+.comment-form #wp-comment-cookies-consent {
+  margin: 0 10px 0 0;
+}
+.comment-form .comment-form-cookies-consent label {
+  display: inline;
+}

@@ -33,7 +33,49 @@ function ali_customizer_register($wp_customize){
        'setting' => 'footer_area',
        'section' => 'footer_area',
   ));
+
+
+//   theme color       
+
+   $wp_customize->add_section('color_setting', array(
+      'title' =>__('Theme color', 'procoder'),
+      'description' => 'change your theme color',
+   ));
+   
+   $wp_customize->add_setting('bg_color', array(
+      'default' => '#ffff',
+   ));
+
+   $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'bg_color', array(
+   
+       'label' => 'primary color',
+       'section' => 'color_setting',
+       'setting' => 'bg_color',
+    )));
+
+   $wp_customize->add_setting('link_color', array(
+      'default' => '#ea1a70',
+   ));
+
+   $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'link_color', array(
+   
+       'label' => 'Background color',
+       'section' => 'color_setting',
+       'setting' => 'link_color',
+    )));
+
  }
  
  add_action('customize_register', 'ali_customizer_register', 'procoder');
+
+
+ function theme_color_cus(){
+   ?>
+   <style>
+     body{background: <?php echo get_theme_mod('bg_color'); ?>}
+     :root{ --pink:<?php echo get_theme_mod('link_color'); ?>}
+   </style>
+   <?php 
+ }
+ add_action('wp_head', 'theme_color_cus');
  
