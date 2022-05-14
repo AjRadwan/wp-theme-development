@@ -16,8 +16,7 @@
                  <?php echo the_post_thumbnail('service')?>
                  <p><?php the_excerpt();?></p>
                  </div>
-               
-             </div>      
+               </div>      
              
              <?php 
                endwhile;

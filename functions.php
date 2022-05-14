@@ -4,6 +4,8 @@
 
 include_once('inc/default.php');
 
+//shortcode
+include_once('inc/shortCode.php');
 
 
 // css theme and jquery file calling register
